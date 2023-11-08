@@ -17,6 +17,6 @@ function downloadAllTickets(){
         var link = $(this).attr('href');
         setTimeout(function() {
             window.open(link, '_blank');
-        }, index * 1000); // 200 milliseconds delay (0.2 seconds)
+        }, index * 1000); // 1000 milliseconds delay (1 seconds)
     });
 }
