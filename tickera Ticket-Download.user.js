@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       tickera Ticket-Download
-// @version    0.1
+// @version    0.2
 // @description Bulk ticket PDF download
 // @match   https://*/wp-admin/edit.php?*post_type=tc_tickets_instances*
 // @require http://code.jquery.com/jquery-3.3.1.min.js
