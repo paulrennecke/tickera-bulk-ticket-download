@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name       tickera Ticket-Download
-// @version    0.2
+// @version    0.3
 // @description Bulk ticket PDF download
 // @match   https://*/wp-admin/edit.php?*post_type=tc_tickets_instances*
 // @require http://code.jquery.com/jquery-3.3.1.min.js
@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 function downloadAllTickets(){
-    $('a:contains("Download"):not(:contains("Downloads"))').each(function(index) {
+    $('a:contains("Download"), a:contains("Herunterladen")').not(':contains("Downloads")').each(function(index) {
         var link = $(this).attr('href');
         setTimeout(function() {
             window.open(link, '_blank');
